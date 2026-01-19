@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform 2D</title>
+    <style>
+        img{
+            width: 300px;
+            display: block;
+            margin-top: 20px;
+            transition: transform 2s;
+        }
+        img.translate:hover{
+            transform: translate(500px,200px);
+        }
+        img.scale:hover {
+            transform: scale(0.5);
+        }
+        img.rotate:hover {
+            transform: rotate(-60deg);
+        }
+        img.skew:hover{
+            transform: skew(-30deg,-20deg);
+        }
+        img.translate-origin{
+            transform-origin: 20% 20%;
+        }
+        img.translate-origin:hover{
+            transform: rotate(-60deg);
+        }
+    </style>
+</head>
+<body>
+<a href="../index.html">Back</a>
+<a href="../../index.html">Home</a>
+<br>
+<h4>1. Translate to right bottom</h4>
+<img class="translate" src="cat.jpeg">
+<h4>2. Scale to 0.5</h4>
+<img class="scale" src="cat.jpeg">
+<h4>3. rotate to -60 degree</h4>
+<img class="rotate" src="cat.jpeg">
+<h4>3. skew to -30,-20 degree</h4>
+<img class="skew" src="cat.jpeg">
+<h4>translate origin is 20%, 20%</h4>
+<img class="translate-origin" src="cat.jpeg">
+</body>
+</html>
